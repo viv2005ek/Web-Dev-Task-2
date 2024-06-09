@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../back.png), linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerContainer {
+    width: clamp(300px, 70vw, 1000px);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: rgba( 111, 125, 251, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* by glassMorphism Genrator */
+
+.selectMode {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+
+.selectMode button {
+    width: 50%;
+    padding: 12px 32px 12px 32px;
+    border-radius: 10px;
+    background: #DA722C;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.outerContainer .signUp {
+    width: 100%;
+}
+
+.display {
+    display: none;
+}
+
+.outerContainer .signUp form .ask {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.outerContainer .signUp form .ask input {
+    width: clamp(250px, 50vw, 950px);
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-width: 0;
+    border-bottom: 2px black solid;
+    padding-left: 20px;
+}
+
+.outerContainer .signUp form .ask input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+.outerContainer .signUp form .ask input :focus {
+    text-decoration: underline;
+}
+
+.outerContainer .signUp form input[type="submit"] {
+    padding: 12px 32px 12px 32px;
+    border-radius: 24px;
+    background: #DA722C;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    width: 150px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.outerContainer .logIn {
+    width: 100%;
+}
+
+.outerContainer .logIn form .ask {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.outerContainer .logIn form .ask input {
+    width: clamp(250px, 50vw, 950px);
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-width: 0;
+    border-bottom: 2px black solid;
+    padding-left: 20px;
+}
+
+.outerContainer .logIn form .ask input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+.outerContainer .logIn form .ask input :focus {
+    text-decoration: underline;
+}
+
+.outerContainer .logIn form input[type="submit"] {
+    padding: 12px 32px 12px 32px;
+    border-radius: 24px;
+    background: #DA722C;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+    width: 150px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+@media (max-width:537px) {
+    .outerContainer .logIn form .ask {
+        margin-top: 4vh;
+    }
+    .outerContainer .signUp form .ask {
+        margin-top: 4vh;
+    }
+}
