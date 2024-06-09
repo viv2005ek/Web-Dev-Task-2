@@ -17,7 +17,7 @@ body {
     text-align: center;
     color: white;
     font-size: 20px;
-    background: rgba( 111, 125, 251, 0.7);
+    background: rgba( 111, 125, 251, 0.6);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
@@ -146,6 +146,10 @@ body {
 }
 
 input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+button:hover {
     cursor: pointer;
 }
 

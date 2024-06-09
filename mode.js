@@ -26,7 +26,17 @@ function modeLogIn() {
 
 
     }
-
-
-
 }
+
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let inputValue = [document.getElementById('name').value, document.getElementById('age').value, document.getElementById('email').value];
+
+    localStorage.setItem('formData', inputValue);
+    console.log(inputValue);
+
+    window.location.href = "next.html";
+
+});

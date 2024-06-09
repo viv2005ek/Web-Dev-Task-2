@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #26308C;
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        h1 {
+            font-size: 30px;
+        }
+        
+        h2 {
+            font-size: 25px;
+        }
+        
+        h3 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="welcome"></h1>
+    <h2 id="email"></h2>
+    <h4 id="age"></h4>
+
+    <script>
+        // Retrieve data from localStorage
+        let formData = localStorage.getItem('formData');
+        formData = formData.split(",");
+
+        // Display data on the page
+        if (formData) {
+            document.getElementById('welcome').textContent = formData[0];
+            document.getElementById('email').textContent = formData[1];
+            document.getElementById('age').textContent = formData[2];
+        }
+    </script>
+</body>
+
+</html>
